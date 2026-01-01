@@ -1,0 +1,12 @@
+import React from 'react';
+
+export const Logo: React.FC<{ className?: string }> = ({ className = "w-12 h-12" }) => (
+  <svg viewBox="0 0 128 128" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="128" height="128" rx="24" fill="#1E1E1E"/>
+    <path d="M44 38H80C82.2091 38 84 39.7909 84 42V70C84 81.0457 75.0457 90 64 90C52.9543 90 44 81.0457 44 70V38Z" stroke="#00D26A" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M84 38H92" stroke="#00D26A" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M54 102C54 104.209 52.2091 106 50 106C47.7909 106 46 104.209 46 102C46 99.7909 47.7909 98 50 98C52.2091 98 54 99.7909 54 102Z" fill="#FBBF24"/>
+    <path d="M82 102C82 104.209 80.2091 106 78 106C75.7909 106 74 104.209 74 102C74 99.7909 75.7909 98 78 98C80.2091 98 82 99.7909 82 102Z" fill="#FBBF24"/>
+    <path d="M54 58L62 66L74 54" stroke="#00D26A" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);

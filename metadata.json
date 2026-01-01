@@ -1,0 +1,5 @@
+{
+  "name": "TruthCart AI",
+  "description": "An AI-powered product trustworthiness analyzer that aggregates sentiment, detects sponsored content, and computes a trust score.",
+  "requestFramePermissions": []
+}

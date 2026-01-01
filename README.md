@@ -1,11 +1,31 @@
-<div align="center">
+# TruthCart
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+TruthCart is an AI-powered product trustworthiness analyzer.
 
-  <h1>Built with AI Studio</h2>
+## Deployment Instructions
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1.  **Deploy Serverless Function**
+    *   Deploy `api/analyze.js` to Vercel (or a compatible serverless platform).
+    *   Set the environment variable `API_KEY` (or `GCP_API_KEY`) to your Google Gemini API Key.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+2.  **Configure Content Script**
+    *   Open `content.js`.
+    *   Replace `const SERVERLESS_URL = "http://localhost:3000/api/analyze";` with your deployed function URL (e.g., `https://your-project.vercel.app/api/analyze`).
 
-</div>
+3.  **Build Extension**
+    *   Ensure the following files are in the extension folder:
+        *   `manifest.json`
+        *   `content.js`
+        *   `styles.css`
+        *   `popup.html`
+        *   `privacy.html`
+        *   Icons (if any)
+
+4.  **Install Extension**
+    *   Open Chrome and go to `chrome://extensions/`.
+    *   Enable "Developer mode".
+    *   Click "Load unpacked" and select the extension folder.
+
+5.  **Usage**
+    *   Visit a product page (e.g., Amazon, AliExpress).
+    *   Click the "Fast Scan" or "Deep Research" button on the TruthCart widget.
